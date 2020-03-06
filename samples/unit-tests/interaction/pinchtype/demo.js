@@ -134,7 +134,8 @@
         chart.pointer.onContainerMouseDown({
             type: 'mousedown',
             pageX: 100 + offset.left,
-            pageY: 100 + offset.top
+            pageY: 100 + offset.top,
+            preventDefault: function () {}
         });
 
         chart.pointer.onContainerMouseMove({

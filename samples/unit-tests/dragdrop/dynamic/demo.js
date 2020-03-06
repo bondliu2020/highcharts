@@ -71,7 +71,8 @@ QUnit.test('Do not change hoverChartIndex during a drag (#4906)', function (asse
         type: 'mousedown',
         button: 0,
         pageX: start,
-        pageY: y
+        pageY: y,
+        preventDefault: function () {}
     });
     chart1.pointer.onContainerMouseMove({
         type: 'mousemove',
